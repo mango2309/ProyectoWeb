@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApplicationIngWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250408062322_BaseActualizada")]
-    partial class BaseActualizada
+    [Migration("20250413034239_CambiosLogin")]
+    partial class CambiosLogin
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
