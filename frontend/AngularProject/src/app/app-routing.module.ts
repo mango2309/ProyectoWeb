@@ -7,6 +7,14 @@ import { RegisterUserComponent } from './users/register/register-user/register-u
 
 const routes: Routes = [
   {
+    path: '',
+    component: RegisterUserComponent
+  },
+  {
+    path: 'register',
+    component: RegisterUserComponent
+  },
+  {
     path: 'admin/categorias',
     component: CategoryListComponent
   },
@@ -17,12 +25,7 @@ const routes: Routes = [
   {
     path: 'admin/categorias/:id',
     component: EditCategoryComponent
-  },
-  {
-    path: 'register',
-    component: RegisterUserComponent
   }
-
 ];
 
 @NgModule({
