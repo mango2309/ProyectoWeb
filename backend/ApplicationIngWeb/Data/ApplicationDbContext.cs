@@ -11,6 +11,7 @@ namespace ApplicationIngWeb.Data
 
         public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
     }
 }

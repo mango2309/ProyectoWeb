@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <h2>Registro de Usuario</h2>
+    <form (ngSubmit)="onSubmit()" #formRef="ngForm">
+  
+      <div class="mb-3">
+        <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
+        <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="user.nombre" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" [(ngModel)]="user.correo" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="contraseña" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="contraseña" name="contraseña" [(ngModel)]="user.password" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+  </div>
+  

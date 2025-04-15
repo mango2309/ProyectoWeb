@@ -1,14 +1,9 @@
-namespace ApplicationIngWeb.Models.Domain
+﻿namespace ApplicationIngWeb.Models.DTO
 {
-
-    public class Usuario
+    public class AddUsuarioRequest
     {
-        public int Id {  get; set; }
         public string Nombre { get; set; }
         public string Correo { get; set; }
         public string Password { get; set; }
-
     }
-
-
 }
