@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ApplicationIngWeb.Data;
 using ApplicationIngWeb.Models.Domain;
 using ApplicationIngWeb.Models.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationIngWeb.Controllers
 {
@@ -31,6 +32,13 @@ namespace ApplicationIngWeb.Controllers
             await dbContext.SaveChangesAsync();
 
             return Ok(usuario);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ObtenerUsuarios()
+        {
+            var usuarios = await dbContext.Usuarios.ToListAsync();
+            return Ok(usuarios);
         }
     }
 }
